@@ -2,6 +2,7 @@ public class Circle {
     private int x;
     private int y;
     private double radius;
+    private static double maxRadius;
 
     public Circle() {
         this(0, 0, 0);
@@ -18,6 +19,9 @@ public class Circle {
         }
         */
         this.radius = Math.max(radius, 0);
+        if (maxRadius < this.radius) {
+            maxRadius = this.radius;
+        }
     }
 
     public int getX() {
@@ -30,6 +34,10 @@ public class Circle {
 
     public double getRadius() {
         return this.radius;
+    }
+
+    public static double getMaxRadius() {
+        return maxRadius;
     }
 
     public void setX(int x) {
@@ -49,6 +57,9 @@ public class Circle {
         } 
         */
         this.radius = Math.max(radius, 0);
+        if (maxRadius < this.radius) {
+            maxRadius = this.radius;
+        }
     }
 
     public int getArea() {
