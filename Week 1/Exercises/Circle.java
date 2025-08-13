@@ -10,7 +10,11 @@ public class Circle {
     public Circle(int x, int y, double radius) {
         this.x = x;
         this.y = y;
-        this.radius = radius;
+        if (radius < 0) {
+            this.radius = 0;
+        } else {
+            this.radius = radius;
+        }
     }
 
     public int getX() {
@@ -34,7 +38,11 @@ public class Circle {
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        if (radius < 0) {
+            this.radius = 0;
+        } else {
+            this.radius = radius;
+        }
     }
 
     public int getArea() {
