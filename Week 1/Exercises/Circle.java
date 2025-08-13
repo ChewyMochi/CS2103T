@@ -10,11 +10,14 @@ public class Circle {
     public Circle(int x, int y, double radius) {
         this.x = x;
         this.y = y;
+        /* 
         if (radius < 0) {
             this.radius = 0;
         } else {
             this.radius = radius;
         }
+        */
+        this.radius = Math.max(radius, 0);
     }
 
     public int getX() {
@@ -38,11 +41,14 @@ public class Circle {
     }
 
     public void setRadius(double radius) {
+        /*
         if (radius < 0) {
             this.radius = 0;
         } else {
             this.radius = radius;
-        }
+        } 
+        */
+        this.radius = Math.max(radius, 0);
     }
 
     public int getArea() {
