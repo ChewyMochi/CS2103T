@@ -1,3 +1,5 @@
+package EnumExercise;
+
 public class Main {
 
     public static void describe(String colour, Priority priority) {

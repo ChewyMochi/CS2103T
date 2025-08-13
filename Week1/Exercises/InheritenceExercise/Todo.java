@@ -1,3 +1,5 @@
+package InheritenceExercise;
+
 public class Todo extends Task {
     protected boolean isDone;
 

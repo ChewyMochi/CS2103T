@@ -1,3 +1,5 @@
+package InheritenceExercise;
+
 public class Task {
     protected String description;
 
